@@ -68,6 +68,93 @@ Acompanhe as métricas e o desempenho da equipe em tempo real.
 ![Dashboard](images/crm/5.webp)
 
 ---
+## 🏗️ Arquitetura
+
+```text
+React Frontend
+      │  REST API + WebSocket
+      ▼
+Express Backend (TypeScript)
+      │
+      ├── Services & Controllers
+      ├── Queues (Bull + Redis)
+      └────── PostgreSQL (Sequelize)
+      │
+      └── Integrations: Baileys (WhatsApp) · OpenAI · Gemini · Payment providers · Webhooks
+```
+
+---
+
+## 📁 Estrutura do projeto
+
+```text
+automasol/
+├── backend/                  # API, business logic, integrations
+│   ├── src/controllers/      # HTTP handlers
+│   ├── src/services/         # Business services & external integrations
+│   ├── src/models/           # Sequelize models
+│   ├── src/database/         # Migrations & seeders
+│   ├── src/queues/           # Job queues (Bull/Redis)
+│   ├── src/routes/           # API routes
+│   └── src/jobs/             # Scheduled jobs (birthdays, send, etc.)
+├── frontend/                 # React admin (dashboard, tickets, flows...)
+│   └── src/pages/            # Screen modules
+├── instalador.sh             # Instance installer script
+├── ecosystem.config.cjs      # PM2 process configuration
+└── README.md
+```
+
+---
+
+## 🚀 Getting started
+
+Requirements:
+
+- **Node.js** (with `npm`)
+- **PostgreSQL**
+- **Redis**
+
+```bash
+# 1. Clone and install dependencies
+git clone <repo-url>
+cd automasol
+
+cd backend && npm install
+cd ../frontend && npm install
+
+# 2. Configure environment
+# Create backend/.env with your connection and app settings:
+# BACKEND_URL, FRONTEND_URL, PORT, DB_*, JWT_SECRET, REDIS_URI, ...
+
+# 3. Create the database and run migrations (backend)
+npm run db:migrate
+
+# 4. Build and start
+cd ../backend && npm run build && npm start
+
+# 5. Run the frontend
+cd ../frontend && npm start
+```
+
+> A ready-to-use instance script is available at `instalador.sh`, and a PM2 configuration at `ecosystem.config.cjs` for production process management.
+
+---
+
+## 🧪 Testing
+
+Backend test infrastructure is configured with **Jest** + **supertest**:
+
+```bash
+cd backend && npm test
+```
+
+---
+
+## 📄 License
+
+Not specified. All rights reserved by the author.
+
+---
 
 ## 🌐 Experimente
 
