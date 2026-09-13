@@ -7,6 +7,7 @@
 
 Gestão de tickets em tempo real, automação no-code, assistentes de IA, campanhas e cobrança por assinatura — tudo em uma única caixa de entrada de equipe, em tempo real.
 
+[🇺🇸 English](README.md)
 </div>
 
 ---
