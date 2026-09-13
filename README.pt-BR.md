@@ -1,5 +1,6 @@
 <div align="center">
 
+![Automatiza logo](images/crm/automatiza-logo-fundo-escuro-500px.png) 
 # 🤖 Automatiza — WhatsApp CRM
 
 **A plataforma de atendimento ao cliente multi-tenant baseada em WhatsApp.**
