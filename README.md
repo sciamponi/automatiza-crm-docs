@@ -9,7 +9,7 @@
 Real-time ticket management, no-code automation, AI assistants, campaigns, and subscription billing — all inside a single, real-time team inbox.
 
 
-[🇧🇷 Português](README.pt-BR.md)
+[English](README.md)
 </div>
 
 
