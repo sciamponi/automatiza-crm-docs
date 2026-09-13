@@ -211,6 +211,7 @@ cd backend && npm test
 
 Not specified. All rights reserved by the author.
 
+---
 ## 🌐 Try it
 
 Explore the CRM:
