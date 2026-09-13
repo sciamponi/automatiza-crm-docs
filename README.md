@@ -1,6 +1,6 @@
 <div align="center">
 
-![Automatiza logo](frontend/public/01_IDENTIDADE_VISUAL/02_LOGO_COMPLETO_SEM_FUNDO/Vetorial/automatiza-logo-fundo-claro.svg)
+![Automatiza logo](images/crm/automatiza-logo-fundo-escuro-500px.png) 
 
 # 🤖 Automatiza — WhatsApp CRM
 
